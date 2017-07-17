@@ -6,11 +6,11 @@
         xmlns:tools="clr-namespace:Professional.Tools"
         xmlns:fileViewLogic="clr-namespace:Professional.Tools.FileViewLogic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="849.074" Loaded="Window_Loaded">
+        Title="MainWindow" Height="400" Width="849.074" 
+        Loaded="Window_Loaded"
+        Icon="Image/MarioBros.ico">
     <Window.Resources>
         <tools:TreeItemImageConverter x:Key="TreeItemImageConverter"></tools:TreeItemImageConverter>
-       
-       
     </Window.Resources>
     <Grid>
         <Expander x:Name="RemoveFilesWithExtension" Header="remove files with specified extension" HorizontalAlignment="Left" Height="80" Margin="340,28,0,0" VerticalAlignment="Top" Width="480">
@@ -26,7 +26,6 @@
                         <Image Name="img"  Width="20" Height="20" Stretch="Fill" Source="{Binding Path=DataContext.Type, RelativeSource={RelativeSource Mode=FindAncestor, 
                                        AncestorType={x:Type TreeViewItem}}, 
                                        Converter={StaticResource TreeItemImageConverter}}">
-
                         </Image>
                         <TextBlock Width="130" Height="20" Text="{Binding Path=DataContext.Name, RelativeSource={RelativeSource Mode=FindAncestor, 
                                        AncestorType={x:Type TreeViewItem}}}"></TextBlock>

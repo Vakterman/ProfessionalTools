@@ -109,7 +109,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
+    <Resource Include="Image\MarioBros.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\diskdrive.png" />
